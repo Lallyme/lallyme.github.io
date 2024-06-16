@@ -1,0 +1,106 @@
+body {
+    background-color: #fff;
+    margin: auto;
+    font-family: 'Dosis', Verdana, Geneva, Tahoma, sans-serif;
+    width: 80%;
+    background-image: url(/img/QA/backgroundQA.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    transition: opacity 0.75s, visibility 0.75s;
+}
+
+.loader-hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+
+header {
+    background-color: rgb(255, 105, 180, .5);
+    height: 58px;
+    margin-bottom: 5px;
+    margin-top: -10px;
+    padding-left: 60px;
+    padding-right: 60px;
+    width: 100%;
+    left: 0;
+    position: fixed;
+    z-index: 2;
+}
+
+header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-left: -5px;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+header li {
+    float: left;
+}
+
+header li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+header li a:hover:not(.active), header li a:focus:not(.active) {
+    background-color: rgb(255, 105, 180);
+}
+
+.active {
+    background-color: #fff;
+    color: hotpink;
+    padding: 15px;
+}
+
+.fas {
+    color: rgb(142, 236, 0);
+    font-size: 2rem;
+    position: fixed;
+    bottom: 30px;
+    right: 50px;
+    padding: 5px;
+    border: transparent solid 1px;
+}
+
+.fas:hover {
+    border: 1px solid hotpink;
+    box-shadow: 0 6px 6px rgb(0,0,0,0.1);
+    border-radius: 3px;
+}
+
+.soon {
+    float: right;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    font-weight: 400;
+    font-size: 6rem;
+    color: rgb(255, 105, 180);
+    padding: 50px;
+    background-color: rgb(255, 255, 255, .5);
+    border-radius: 20px;
+    width: fit-content;
+}

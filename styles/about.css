@@ -1,0 +1,163 @@
+body {
+    background-color: #fff;
+    width: 80vw;
+    margin: auto;
+    font-family: 'Dosis', Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    transition: opacity 0.75s, visibility 0.75s;
+}
+
+.loader-hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+header {
+    background-color: rgb(255, 105, 180, .5);
+    height: 58px;
+    margin-bottom: 5px;
+    margin-top: -10px;
+    padding-left: 60px;
+    padding-right: 60px;
+    width: 100%;
+    left: 0;
+    position: fixed;
+    z-index: 2;
+}
+
+header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-left: -5px;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+header li {
+    float: left;
+}
+
+header li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+header li a:hover:not(.active), header li a:focus:not(.active) {
+    background-color: #ff69b4;
+}
+
+.active {
+    background-color: #fff;
+    color: rgb(255, 105, 180);
+    padding: 15px;
+}
+
+h2 {
+    font-weight: 400;
+    color: rgb(98, 185, 255);
+}
+
+.container {
+    display: flex;
+}
+
+.main-content {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+    margin-top: 60px;
+    margin-left: 380px;
+    margin-bottom: 47px;
+}
+
+.main-content img {
+    width: 100%;
+}
+
+div.scroll-container {
+    overflow: auto;
+    overflow-y: scroll;
+    margin-top: 70px;
+    width: 367px;
+    height: 80vh;
+    position: fixed;
+}
+
+.memes-image {
+    width: 350px;
+    margin: 0;
+    margin-bottom: 5px;
+    padding: 0;
+    border: outset #ccc 4px;
+    border-radius: 4px;
+}
+.memes-image:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+/* Hide scroll bar for Chrome/Safari */
+.scroll-container::-webkit-scrollbar {
+    width: 0.5em;
+}
+
+/* Hide the scroll bar for Firefox */
+.scroll-container {
+    scrollbar-width: thin; 
+    scrollbar-color: transparent transparent;
+}
+
+.fas {
+    color: rgb(142, 236, 0);
+    font-size: 2rem;
+    position: fixed;
+    bottom: 30px;
+    right: 50px;
+    padding: 5px;
+    border: transparent solid 1px;
+}
+
+.fas:hover {
+    border: 1px solid hotpink;
+    box-shadow: 0 6px 6px rgb(0,0,0,0.1);
+    border-radius: 3px;
+}
+
+@media all and (max-width: 1200px) {
+    body {
+        width: 95vw;
+    }
+
+    .container {
+        flex-direction: column-reverse;
+
+    }
+    .main-content {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    div.scroll-container {
+        flex-direction: row-reverse;
+        position: relative;
+        margin-left: 20px;
+    }
+}

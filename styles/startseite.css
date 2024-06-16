@@ -1,0 +1,276 @@
+body {
+    width: 80vw;
+    margin: auto;
+    font-family: 'Dosis', Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    transition: opacity 0.95s, visibility 0.95s;
+}
+
+.loader-hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+h1 {
+    font-weight: 400;
+    font-size: 5rem;
+}
+
+h2 {
+    font-weight: 100;
+    font-size: 3rem;
+}
+
+h2 b {
+    font-weight: bold;
+}
+
+.tagline-box {
+    height: 100%;
+    margin: auto;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;;
+}
+
+.pink-heading {
+    color: rgb(255, 105, 180);
+    float: left;
+    background-color: transparent;
+    border: none;
+    text-decoration: none;
+}
+
+.green-heading {
+    color: rgb(142, 236, 0);
+    background-color: transparent;
+    border: none;
+    text-decoration: none;
+}
+
+.blue-heading {
+    color: rgb(98, 185, 255);
+    background-color: transparent;
+    border: none;
+    text-decoration: none;
+}
+
+.universal-heading {
+    font-size: 60pt;
+    font-family: 'Dosis', sans-serif;
+    position: relative;
+    left: 6rem;
+    line-height: 6rem;
+    background-color: transparent;
+}
+
+.full-width-image {
+    width: 100%;
+    clear: both;
+}
+
+.full-width-image::before {
+    content: "";
+}
+
+#work {
+    padding: 80px;
+}
+
+header {
+    background-color: rgb(255, 105, 180, .5);
+    height: 58px;
+    margin-bottom: 5px;
+    margin-top: -10px;
+    padding-left: 60px;
+    padding-right: 60px;
+    width: 100%;
+    left: 0;
+    position: fixed;
+    z-index: 2;
+}
+
+header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-left: -5px;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+header li {
+    float: left;
+}
+
+header li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+header li a:hover:not(.active), header li a:focus:not(.active) {
+    background-color: rgb(255, 105, 180);
+}
+
+.active {
+    background-color: #fff;
+    color: rgb(255, 105, 180);
+    padding: 15px;
+}
+
+section, aside {
+    float: left;
+    width: 46%;
+    padding: 1%;
+    margin: 1%;
+}
+
+.columns::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+.centered-elements {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    margin: 0;
+}
+
+.card-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.card {
+    display: flex;
+    border: 1px solid white;
+    border-radius: 5px;
+    width: 800px;
+    overflow: hidden;
+}
+
+.card-right {
+    flex-direction: row-reverse;
+}
+
+.card:hover {
+    box-shadow: 0 6px 6px rgba(0,0,0,0.1);
+    border: 1px solid hotpink;
+}
+
+.card img {
+    width: 300px;
+    height: auto;
+    object-fit: cover;
+}
+
+.card-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.card-content h2 {
+    font-size: 1.5rem;
+    margin-top: 30px;
+}
+
+.card-content p {
+    margin: 0;
+}
+
+.fas {
+    color: rgb(142, 236, 0);
+    font-size: 2rem;
+    position: fixed;
+    bottom: 30px;
+    right: 50px;
+    padding: 5px;
+    border: transparent solid 1px;
+}
+
+.fas:hover {
+    border: 1px solid hotpink;
+    box-shadow: 0 6px 6px rgb(0,0,0,0.1);
+    border-radius: 3px;
+}
+
+@media all and (max-width: 1200px) {
+    .universal-heading {
+        font-size: 35pt;
+        font-family: 'Dosis', sans-serif;
+        position: relative;
+        left: 2.5rem;
+        line-height: 4rem;
+        background-color: transparent;
+    }
+
+    h1 {
+        font-weight: 400;
+        font-size: 3rem;
+        float: right;
+        margin: 10%;
+    }
+
+    section {
+    float: none;
+    width: 100%;
+    padding: 1%;
+    margin: 5%;
+    margin-top: 10%;
+}
+
+    aside {
+    float: right;
+    width: 50%;
+    padding: 10%;
+    margin: 10%;
+    align-items: center;
+    justify-content: center;
+    display: none;
+
+}
+
+}
+
+@media all and (max-width: 900px) {
+    .card {
+        display: flex;
+        border: 1px solid white;
+        border-radius: 5px;
+        width: 300px;
+        overflow: hidden;
+        font-size: smaller;
+    }
+    
+    .card-content h2 {
+        font-size: 1.2rem;
+        margin-top: 5px;
+    }
+    
+        .card img {
+        width: 100px;
+        height: auto;
+        object-fit: scale-down;
+    }
+}

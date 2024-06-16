@@ -1,0 +1,149 @@
+body {
+    font-family: Dosis, Verdana, Geneva, Tahoma, sans-serif;
+    width: 60vw;
+    margin: auto;
+}
+
+h1 {
+    font-size: 4em;
+    font-weight: 400;
+    color: rgb(98, 185, 255);
+}
+
+h2 {
+    font-weight: 400;
+}
+
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    transition: opacity 0.75s, visibility 0.75s;
+}
+
+.loader-hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+
+header {
+    background-color: rgb(255, 105, 180, .5);
+    height: 58px;
+    margin-bottom: 5px;
+    margin-top: -10px;
+    padding-left: 60px;
+    padding-right: 60px;
+    width: 100%;
+    left: 0;
+    position: fixed;
+    z-index: 2;
+}
+
+header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-left: -5px;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+header li {
+    float: left;
+}
+
+header li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+header li a:hover:not(.active), header li a:focus:not(.active) {
+    background-color: rgb(255, 105, 180);
+}
+
+.active {
+    background-color: #fff;
+    color: rgb(255, 105, 180);
+    padding: 15px;
+}
+
+section, aside {
+    float: left;
+    width: 46%;
+    padding: 1%;
+    margin: 1%;
+}
+
+.icon-dribbble {
+    height: 20px;
+    margin: 16px;
+    background-image: url(/img/icons/dribbbleblacksmall.svg);
+    background-repeat: no-repeat;
+}
+
+.icon-linkedin {
+    height: 20px;
+    margin: 16px;
+    background-image: url(/img/icons/linkedinblacksmall.svg);
+    background-repeat: no-repeat;
+}
+
+.icon-dribbble:hover {
+    height: 20px;
+    margin: 16px;
+    background-image: url(/img/icons/dribbblecolorsmall.svg);
+}
+
+.icon-linkedin:hover {
+    height: 20px;
+    margin: 16px;
+    background-image: url(/img/icons/linkedincolorsmall.svg);
+}
+
+#icons {
+    display: inline-flex;
+}
+
+.submit-button {
+    background-color: white;
+    border-radius: 5px;
+    font-family: inherit;
+    border: 1px solid #8f8f9d;
+}
+
+.submit-button:hover {
+    border: 1px solid hotpink;
+    box-shadow: 0 6px 6px rgba(0,0,0,0.1);
+    cursor: pointer;
+}
+
+#feedback {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+
+@media all and (max-width: 900px) {
+    section, aside {
+        float: none;
+        width: 100%;
+        padding: 1%;
+        margin: 1%;
+    }
+
+    aside {
+        margin-bottom: 50px;
+    }
+}
