@@ -27,6 +27,25 @@ body {
 }
 
 
+/* Layout Styles */
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* Centering Styles for Images */
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.image-container img {
+  max-width: 90%;
+  height: auto;
+}
+
 header {
     background-color: rgb(255, 105, 180, .5);
     height: 58px;
@@ -102,3 +121,4 @@ header li a:hover:not(.active), header li a:focus:not(.active) {
     border-radius: 20px;
     width: fit-content;
 }
+
