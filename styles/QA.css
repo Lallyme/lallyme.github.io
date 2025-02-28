@@ -36,9 +36,10 @@ body {
 /* Centering Styles for Images */
 .image-container {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+  flex-direction: column; /* Stack images vertically */
+  align-items: center; /* Center images horizontally */
+  gap: 20px; /* Space between images */
+  padding: 20px; /* Padding around the container */
 }
 
 .image-container img {
