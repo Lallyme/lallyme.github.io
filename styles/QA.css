@@ -6,10 +6,22 @@ body {
 
 }
 
-    iframe {
-      border: 1px solid #ccc; /* Optional: Add a border */
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow */
-    }
+/* Center the div container */
+.container {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100vh; /* Full viewport height */
+  background-color: #f4f4f4; /* Optional: Add a background color */
+}
+
+/* Style the iframe */
+iframe {
+  width: 390px; /* Set the width of the iframe */
+  height: 844px; /* Set the height of the iframe */
+  border: 1px solid #ccc; /* Optional: Add a border */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow */
+}
 
 
 .loader {
