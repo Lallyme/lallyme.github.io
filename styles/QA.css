@@ -6,6 +6,11 @@ body {
 
 }
 
+    iframe {
+      border: 1px solid #ccc; /* Optional: Add a border */
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow */
+    }
+
 
 .loader {
     position: fixed;
