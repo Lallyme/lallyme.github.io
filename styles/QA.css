@@ -109,6 +109,26 @@ header li a:hover:not(.active), header li a:focus:not(.active) {
     border-radius: 3px;
 }
 
+/* Layout Styles */
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* Centering Styles for Images */
+.image-container {
+  display: flex;
+  flex-direction: column; /* Stack images vertically */
+  align-items: center; /* Center images horizontally */
+  gap: 20px; /* Space between images */
+  padding: 20px; /* Padding around the container */
+}
+
+.image-container img {
+  max-width: 90%;
+  height: auto;
+}
+
 .soon {
     float: right;
     align-items: center;
