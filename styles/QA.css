@@ -35,16 +35,14 @@ body {
 
 /* Centering Styles for Images */
 .image-container {
-  display: flex;
-  flex-direction: column; /* Stack images vertically */
-  align-items: center; /* Center images horizontally */
-  gap: 20px; /* Space between images */
-  padding: 20px; /* Padding around the container */
+  text-align: center; /* Center images horizontally */
 }
 
 .image-container img {
+  display: block; /* Stack images vertically */
   max-width: 90%;
   height: auto;
+  margin: 20px auto; /* Add space between images and center them */
 }
 
 header {
